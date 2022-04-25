@@ -44,7 +44,9 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col-12 mt-5 ">
-            <h1 className="logo-text gray-text center-align">- syntec -</h1>
+            <h1 className="logo-text gray-text center-align">
+              - Flur-Lechem -
+            </h1>
           </div>
         </div>
       </FooterWrapper>

@@ -24,15 +24,15 @@ export const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-      window.addEventListener('scroll', changeNav);      
-  }, [])
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/">
-            <h1 className="logo-text">syntec</h1>
+            <h1 className="logo-text">Flur-Lechem</h1>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
