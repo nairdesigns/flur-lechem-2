@@ -4,7 +4,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobileIcon,
+  HamburgerButton,
   NavMenu,
   NavItem,
   NavLinks,
@@ -12,7 +12,7 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 import "./../../App.css";
-
+import logo from "../../images/flur-lechem-logo.jpg";
 export const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -32,11 +32,19 @@ export const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/">
-            <h1 className="logo-text">Flur-Lechem</h1>
+            <img
+              className="logo-text"
+              src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/277730334_102251775781603_2943809287366827913_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=73z0x8kSZI0AX_XnLGM&_nc_zt=23&_nc_ht=scontent.fcrk4-1.fna&oh=00_AT_tvqDvstku3V0wzMw_lRvA8aTzDRRe_vl1BlFHrjZmDg&oe=626BBBF7"
+              alt="logo"
+              height="70px"
+            />
+            <h1 className="logo-text">
+              <img src={logo} height="60px" alt="logo" />
+            </h1>
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <HamburgerButton onClick={toggle}>
             <FaBars />
-          </MobileIcon>
+          </HamburgerButton>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>

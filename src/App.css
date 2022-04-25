@@ -10,7 +10,8 @@
 
 .logo-text {
   font: "Josefin Sans";
-
+  position: relative;
+  right: 40px;
 }
 
 .center-align {
@@ -19,21 +20,18 @@
 
 .black-bg {
   background: black;
-
 }
 
 .white-bg {
   background: white;
-
 }
 
 .primary-bg {
-  background: #B05FFD;
-
+  background: #b05ffd;
 }
 
 .h1-hero {
-  color: #fff;
+  color: black;
   font-size: 48px;
   text-align: center;
   font-weight: bold;
@@ -45,26 +43,22 @@
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-
 }
 
 .hero-text {
-  color: #fff;
+  color: black;
   font-size: 24px;
   text-align: center;
-
 }
 
 .img-wrap {
   height: 100%;
   max-width: 700px;
   margin: auto;
-
 }
 
 .fit-img {
   width: 100%;
-
 }
 
 .expand-row {

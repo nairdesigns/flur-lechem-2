@@ -25,10 +25,10 @@ export const Home = () => {
       <InfoSection
         image={Image1}
         id="about"
-        subtitle="Mauris tempor interdum"
-        title="Proin condimentum diam"
-        text="In luctus nibh nec metus placerat consectetur. Maecenas odio mi, ullamcorper at porta non, egestas vitae velit. Donec lacinia porta tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec arcu nec diam posuere tincidunt. Nulla dignissim enim id nibh luctus, ullamcorper sagittis eros semper."
-        btnText="Start today"
+        subtitle=""
+        title="A Bakery Like None Other"
+        text="Flur-Lechem is your one-stop shop & supplier with a wide range of fresh & tasty baked goods for every occasion. 🇵🇭 💯 Trusted quality pastries! In every thing give thanks: for this is the will of God in Christ Jesus concerning you. -1 Thess 5:18 See less"
+        btnText="Learn More"
       />
       <InfoSectionLight
         image={Image2}
