@@ -14,7 +14,7 @@ export const InfoSectionLight = ({
 }) => {
   return (
     <>
-      <InfoContainer id={id} className="bg-white">
+      <InfoContainer id={id} className="">
         <InfoWrapper>
           <div className="row expand-row gx-5">
             <div className="col-lg-6 col-sm-12 img-wrap">
@@ -24,7 +24,12 @@ export const InfoSectionLight = ({
               <Subtitle>{subtitle}</Subtitle>
               <Title className="text-black mb-5">{title}</Title>
               <p className="text-black mb-4">{text}</p>
-              <ButtonBasicInv to="" primary="false" dark="true" className="mx-auto">
+              <ButtonBasicInv
+                to=""
+                primary="false"
+                dark="true"
+                className="mx-auto"
+              >
                 {btnText}
               </ButtonBasicInv>
             </div>
