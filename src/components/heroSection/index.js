@@ -24,10 +24,13 @@ const HeroSection = () => {
         {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
-        <h1 className="h1-hero">Reaching Goals Made Easy</h1>
+        <h1 className="h1-hero">What does Flur-Lechem mean?</h1>
         <p className="hero-text">
-          Sign up today and recieve $250 in credit for your next sucessfull
-          project.
+          Hebrew; /lehem/ <br></br> n. meaning bread, food
+          <br></br>
+          <br></br>
+          Because we supply the{" "}
+          <b>freshest bread, pastries, and baking ingredients!</b>
         </p>
         <HeroBtnWrapper>
           <ButtonR
