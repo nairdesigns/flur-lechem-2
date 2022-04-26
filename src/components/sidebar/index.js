@@ -3,7 +3,6 @@ import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  SidebarRoute,
   SideBtnWrap,
   SidebarWrapper,
   SidebarMenu,

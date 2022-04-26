@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
   HeroContent,
   HeroBtnWrapper,
   ArrowForward,
