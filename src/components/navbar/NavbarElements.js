@@ -4,6 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: white;
+  background-color: white;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -24,12 +25,16 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   z-index: 1;
+  background-color: white;
+
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
   //color: #B05FFD;
+  background-color: white;
+
   color: black;
   justify-self: flex-start;
   cursor: pointer;
@@ -81,6 +86,8 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: black;
+  background-color: white;
+
   display: flex;
   align-items: center;
   text-decoration: none;
