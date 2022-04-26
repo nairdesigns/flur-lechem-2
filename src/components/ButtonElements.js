@@ -27,6 +27,7 @@ export const Button = styled(LinkS)`
 
 export const ButtonR = styled(LinkR)`
   border-radius: 50px;
+  background-color: transparent;
   background: ${({ primary }) => (primary ? "#FF5733" : "#010606")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};

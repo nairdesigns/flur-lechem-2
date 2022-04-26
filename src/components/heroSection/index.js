@@ -32,17 +32,7 @@ const HeroSection = () => {
           Because we supply the{" "}
           <b>freshest bread, pastries, and baking ingredients!</b>
         </p>
-        <HeroBtnWrapper>
-          <ButtonR
-            to="/signin"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </ButtonR>
-        </HeroBtnWrapper>
+        <HeroBtnWrapper></HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   );
