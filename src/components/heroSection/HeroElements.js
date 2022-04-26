@@ -47,10 +47,12 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
-  padding: 8px 24px;
+  border-radius: 20px;
+  padding: 178px 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1523294587484-bae6cc870010?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=80");
 `;
 
 export const HeroBtnWrapper = styled.div`
