@@ -74,7 +74,7 @@ export const ButtonBasic = styled(LinkS)`
   }
 `;
 
-export const ButtonBasicInv = styled(LinkS)`
+export const ButtonBasicInv = styled(LinkR)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "DARKORANGE" : "white")};
   white-space: nowrap;
