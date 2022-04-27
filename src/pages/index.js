@@ -4,11 +4,15 @@ import InfoSection from "../components/infoSection";
 import { Navbar } from "./../components/navbar";
 import { Sidebar } from "./../components/sidebar";
 
-import Image1 from "../images/design-notes.svg";
-import Image2 from "../images/space.svg";
+// import Image1 from "../images/design-notes.svg";
 import InfoSectionLight from "../components/infoSectionLight";
 import Services from "../components/services";
 import Footer from "../components/footer";
+
+const Image1 =
+  "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
+const Image2 =
+  "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
 
 export const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
