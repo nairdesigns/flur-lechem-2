@@ -40,7 +40,9 @@ body {
 }
 
 .h1-hero {
-  color: black;
+  text-shadow: 2px 2px 1px #595959;
+
+  color: white;
   background-color: transparent;
   font-size: 48px;
   text-align: center;
@@ -56,10 +58,11 @@ body {
 }
 
 .hero-text {
-  color: black;
+  color: white;
   font-size: 24px;
   text-align: center;
   background-color: transparent;
+  text-shadow: 2px 2px 1px #767676;
 }
 
 b {
