@@ -4,10 +4,10 @@ import { Link as LinkR } from "react-router-dom";
 
 export const Button = styled(LinkS)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#B05FFD" : "#010606")};
+  background: ${({ primary }) => (primary ? "DARKORANGE" : "white")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -20,18 +20,18 @@ export const Button = styled(LinkS)`
   font-weight: 600;
 
   &:hover {
-    background: ${({ primary }) => (primary ? "#fff" : "#B05FFD")};
-    color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+    background: ${({ primary }) => (primary ? "" : "DARKORANGE")};
+    color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   }
 `;
 
 export const ButtonR = styled(LinkR)`
   border-radius: 50px;
   background-color: transparent;
-  background: ${({ primary }) => (primary ? "#FF5733" : "#010606")};
+  background: ${({ primary }) => (primary ? "#FF5733" : "white")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -43,17 +43,18 @@ export const ButtonR = styled(LinkR)`
   text-decoration: none;
   font-weight: 600;
   &:hover {
-    background: ${({ primary }) => (primary ? "#fff" : "#B05FFD")};
-    color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+    background: ${({ primary }) =>
+      primary ? "rgb(176, 176, 176);" : "DARKORANGE"};
+    color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   }
 `;
 
 export const ButtonBasic = styled(LinkS)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#B05FFD" : "#010606")};
+  background: ${({ primary }) => (primary ? "DARKORANGE" : "white")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -67,17 +68,18 @@ export const ButtonBasic = styled(LinkS)`
   font-weight: 600;
 
   &:hover {
-    background: ${({ primary }) => (primary ? "#fff" : "#B05FFD")};
-    color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+    background: ${({ primary }) =>
+      primary ? "rgb(176, 176, 176);" : "DARKORANGE"};
+    color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   }
 `;
 
 export const ButtonBasicInv = styled(LinkS)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#B05FFD" : "#010606")};
+  background: ${({ primary }) => (primary ? "DARKORANGE" : "white")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "white" : "rgb(176, 176, 176);")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -92,6 +94,6 @@ export const ButtonBasicInv = styled(LinkS)`
 
   &:hover {
     background: #000;
-    color: #fff;
+    color: rgb(176, 176, 176);
   }
 `;

@@ -19,13 +19,18 @@ img {
   padding: 0;
   box-sizing: border-box;
   font-family: "Encode Sans Expanded", sans-serif;
-  background-color: rgb(234, 234, 234);
+  background-color: transparent;
 }
 
 .logo-text {
   font: "Josefin Sans";
   position: relative;
   right: 40px;
+  box-shadow: ;
+}
+
+.logo-text > img {
+  box-shadow: none;
 }
 
 .center-align {
@@ -41,12 +46,11 @@ img {
 }
 
 .primary-bg {
-  background: #b05ffd;
+  background: darkorange;
 }
 
 .h1-hero {
-  text-shadow: 2px 2px 1px #595959;
-
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   color: white;
   background-color: transparent;
   font-size: 48px;
@@ -67,7 +71,7 @@ img {
   font-size: 24px;
   text-align: center;
   background-color: transparent;
-  text-shadow: 2px 2px 1px #767676;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 b {
@@ -96,8 +100,8 @@ b {
   color: black;
 }
 
-.gray-text {
-  color: gray;
+.black-text {
+  color: black;
 }
 
 .pl {

@@ -34,23 +34,23 @@ export const Home = () => {
         text="Flur-Lechem is your one-stop shop & supplier with a wide range of fresh & tasty baked goods for every occasion. 🇵🇭 💯 Trusted quality pastries! In every thing give thanks: for this is the will of God in Christ Jesus concerning you. -1 Thess 5:18 See less"
         btnText="Learn More"
       />
-      <InfoSectionLight
+      {/* <InfoSectionLight
         image={Image2}
         id="discover"
         subtitle="Morbi iaculis enim"
         title="In hac habitasse"
         text="Phasellus porta sagittis sapien. Nam quis odio eu libero tempus rutrum. Suspendisse nec eros eget ex cursus rhoncus. Proin at velit quis ante pretium porta. Quisque pulvinar, elit et tincidunt ultricies, mauris odio luctus risus, vitae auctor elit risus a tortor. Nunc pulvinar purus id est rutrum vulputate. Mauris venenatis lectus vel nisi semper scelerisque."
-        btnText="Explore"
+        btnText="Explore" */}
       />
       <Services />
-      <InfoSectionLight
+      {/* <InfoSectionLight
         image={Image1}
         id="#"
         subtitle="Duis et lectus accumsan"
         title="Quisque dui justo"
         text="Cras et ligula eget neque ornare tempor et vitae est. Duis et lectus accumsan, mollis dui a, finibus metus. Quisque dui justo, ullamcorper eget luctus id, consectetur eget nunc. In quis arcu erat. Morbi consequat imperdiet lorem, porta porta erat hendrerit vel. Aliquam dignissim purus at dolor posuere euismod."
         btnText="Read more"
-      />
+      /> */}
       <Footer />
     </>
   );

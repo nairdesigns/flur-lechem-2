@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
   padding-top: 30px;
   padding-bottom: 15px;
-  background-color: #dc6d24;
+  background-color: rgb(176, 176, 176); ;
 `;
 
 export const FooterWrapper = styled.div`
@@ -12,7 +12,7 @@ export const FooterWrapper = styled.div`
 
 export const FooterH2 = styled.h2`
   font-size: 1.3rem;
-  color: white;
+  color: black;
   font-weight: 500;
   margin-bottom: 30px;
 `;
@@ -20,11 +20,11 @@ export const FooterH2 = styled.h2`
 export const FooterLink = styled.a`
   font-size: 0.9rem;
   text-decoration: none;
-  color: white;
+  color: black;
   display: flex;
   transition: all 0.3s;
 
   &:hover {
-    color: #b05ffd;
+    color: darkorange;
   }
 `;

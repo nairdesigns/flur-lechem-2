@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
-  //color: #B05FFD;
+  //color: DARKORANGE;
   background-color: white;
 
   color: black;
@@ -47,7 +47,7 @@ export const NavLogo = styled(LinkR)`
   transition: all ease 0.2s;
 
   &:hover {
-    color: #b05ffd;
+    color: darkorange;
   }
 `;
 
@@ -99,11 +99,11 @@ export const NavLinks = styled(LinkS)`
   transition: all 0.2s ease-in-out;
 
   &.active {
-    border-bottom: 3px solid #b05ffd;
+    border-bottom: 3px solid darkorange;
   }
 
   &:hover {
-    color: #b05ffd;
+    color: darkorange;
   }
 `;
 export const NavBtn = styled.nav`
@@ -117,10 +117,10 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   text-decoration: none;
-  background: #b05ffd;
+  background: darkorange;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: white;
   font-size: 1rem;
   outline: none;
   border: none;
@@ -130,7 +130,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #b05ffd;
+    background: rgb(176, 176, 176);
+    color: darkorange;
   }
 `;
