@@ -12,12 +12,13 @@ const Contact = () => {
     <ContactContainer>
       <ContactWrapper className="py-5 px-5">
         <div
-          className="pt-2"
-          data-tf-widget="t6ovw9T1"
-          data-tf-iframe-props="title=Contact Form (copy)"
+          data-tf-widget="lrty5uTZ"
+          data-tf-iframe-props="title=flur lechem"
           data-tf-medium="snippet"
           style={{ width: "100%", height: "400px" }}
-        ></div>
+        >
+          &lt;
+        </div>
         {/* <div className="my-auto">
           <h3 className="center-align mb-5">Contact Us!</h3> */}
 
