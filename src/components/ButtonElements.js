@@ -25,7 +25,7 @@ export const Button = styled(LinkS)`
   }
 `;
 
-export const ButtonR = styled(LinkR)`
+export const ButtonR = styled(LinkS)`
   border-radius: 50px;
   background-color: transparent;
   background: ${({ primary }) => (primary ? "#FF5733" : "white")};
@@ -49,7 +49,7 @@ export const ButtonR = styled(LinkR)`
   }
 `;
 
-export const ButtonBasic = styled(LinkS)`
+export const ButtonBasic = styled(LinkR)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "DARKORANGE" : "white")};
   white-space: nowrap;

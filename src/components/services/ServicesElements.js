@@ -8,7 +8,6 @@ export const ServicesContainer = styled.div`
   align-items: center;
   background: darkorange;
   padding: 50px 0;
-
   @media screen and (max-width: 768px) {
     min-height: 1100px;
   }
@@ -64,7 +63,7 @@ export const ServicesIcon = styled.img`
 
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
-  color: rgb(176, 176, 176);
+  color: white;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {

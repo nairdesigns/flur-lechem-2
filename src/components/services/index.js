@@ -17,16 +17,17 @@ const Services = () => {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Our Services</ServicesH1>
+      <ServicesH2>Coming soon...</ServicesH2>
       <ServicesWrapper>
-        <ServicesCard>
+        {/* <ServicesCard>
           <ServicesIcon src={Icon1} />
           <ServicesH2>Donec quis</ServicesH2>
           <ServicesP>
             Fusce fringilla est ut velit finibus ultricies. Pellentesque id
             eleifend erat.
           </ServicesP>
-        </ServicesCard>
-        <ServicesCard>
+        </ServicesCard> */}
+        {/* <ServicesCard>
           <ServicesIcon src={Icon2} />
           <ServicesH2>Maecenas ac posuere</ServicesH2>
           <ServicesP>
@@ -41,7 +42,7 @@ const Services = () => {
             Aenean in egestas lectus. Pellentesque habitant morbi tristique
             senectus et netus et malesuada fames ac turpis egestas.s
           </ServicesP>
-        </ServicesCard>
+        </ServicesCard> */}
       </ServicesWrapper>
     </ServicesContainer>
   );

@@ -20,8 +20,13 @@ export const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about" onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
-            Discover
+          <SidebarLink
+            onClick={() => {
+              window.location.href = "/contact";
+            }}
+            to=""
+          >
+            Contact Us
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
             Services

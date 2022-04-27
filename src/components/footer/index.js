@@ -23,9 +23,9 @@ const Footer = () => {
           <div className="col-lg-3 col-sm-6 ">
             <FooterH2>Contact Us</FooterH2>
             <FooterLink href="/contact">Contact</FooterLink>
-            <FooterLink href="#">Support</FooterLink>
+            {/* <FooterLink href="#">Support</FooterLink>
             <FooterLink href="#">Destinations</FooterLink>
-            <FooterLink href="#">Our Locations</FooterLink>
+            <FooterLink href="#">Our Locations</FooterLink> */}
           </div>
           {/* <div className="col-lg-3 col-sm-6">
             <FooterH2>Customers</FooterH2>
