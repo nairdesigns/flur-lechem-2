@@ -1,9 +1,18 @@
 import React from "react";
-import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from "./ServicesElements";
-import Icon1 from "../../images/space.svg"
-import Icon2 from "../../images/online.svg"
-import Icon3 from "../../images/real-time.svg"
-
+import {
+  ServicesContainer,
+  ServicesH1,
+  ServicesWrapper,
+  ServicesCard,
+  ServicesIcon,
+  ServicesH2,
+  ServicesP,
+} from "./ServicesElements";
+// import Icon1 from "../../images/space.svg";
+import Icon2 from "../../images/online.svg";
+import Icon3 from "../../images/real-time.svg";
+const Icon1 =
+  "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
 const Services = () => {
   return (
     <ServicesContainer id="services">
