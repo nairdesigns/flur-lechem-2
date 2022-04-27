@@ -22,7 +22,7 @@ const Footer = () => {
           </div> */}
           <div className="col-lg-3 col-sm-6 ">
             <FooterH2>Contact Us</FooterH2>
-            <FooterLink href="#">Contact</FooterLink>
+            <FooterLink href="/contact">Contact</FooterLink>
             <FooterLink href="#">Support</FooterLink>
             <FooterLink href="#">Destinations</FooterLink>
             <FooterLink href="#">Our Locations</FooterLink>

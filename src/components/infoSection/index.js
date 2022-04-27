@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../App.css";
 import { InfoContainer, InfoWrapper, Subtitle, Title } from "./InfoElements";
 import { ButtonBasic } from "../ButtonElements";
+import { Link } from "react-router-dom";
 
 export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
   return (
@@ -15,7 +16,7 @@ export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
               <Title className="text-black mb-5">{title}</Title>
               <p className="text-black mb-4">{text}</p>
               <ButtonBasic to="" primary="true" dark="true" className="mx-auto">
-                {btnText}
+                <Link to="/contact"> {btnText}</Link>
               </ButtonBasic>
             </div>
             <div className="col-lg-6 col-sm-12 img-wrap">

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 100vh;
-  background: #000;
+  background: darkorange;
   align-content: center;
   justify-content: center;
   display: flex;
@@ -10,8 +10,8 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-  background: rgb(176, 176, 176);
-  min-height: 600px;
+  position: relative;
+  ${"" /* min-height: 600px; */}
   width: 500px;
   max-width: 90%;
   margin: auto;
