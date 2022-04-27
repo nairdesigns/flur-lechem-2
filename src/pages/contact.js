@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Footer from "../components/footer";
-import Signin from "../components/signin";
-import { Navbar } from "./../components/navbar";
-import { Sidebar } from "./../components/sidebar";
+import Contact from "../components/contact";
+import { Navbar } from "../components/navbar";
+import { Sidebar } from "../components/sidebar";
 
-const SigninPage = () => {
+const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -12,13 +12,13 @@ const SigninPage = () => {
   };
 
   return (
-    <>
+    <div>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Signin />
+      <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default SigninPage;
+export default ContactPage;

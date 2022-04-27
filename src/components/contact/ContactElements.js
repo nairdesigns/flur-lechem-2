@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SigninContainer = styled.div`
+export const ContactContainer = styled.div`
   height: 100vh;
   background: #000;
   align-content: center;
@@ -9,7 +9,7 @@ export const SigninContainer = styled.div`
   position: relative;
 `;
 
-export const SigninWrapper = styled.div`
+export const ContactWrapper = styled.div`
   background: rgb(176, 176, 176);
   min-height: 600px;
   width: 500px;
@@ -20,12 +20,12 @@ export const SigninWrapper = styled.div`
   flex-direction: column;
 `;
 
-export const SigninP = styled.p`
+export const ContactP = styled.p`
   font-weight: 600;
   margin-bottom: 5px;
 `;
 
-export const SigninInput = styled.input`
+export const ContactInput = styled.input`
   width: 100%;
   padding: 10px 10px;
   border-radius: 10px;
