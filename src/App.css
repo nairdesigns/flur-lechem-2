@@ -26,7 +26,7 @@ img {
   font: "Josefin Sans";
   position: relative;
   right: 40px;
-  box-shadow: ;
+  box-shadow: none;
 }
 
 .logo-text > img {
