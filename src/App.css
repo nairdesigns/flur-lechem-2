@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Encode+Sans+Expanded");
 
+/* CSS fonts */
+/* font-family: 'Caveat', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Water Brush', cursive; */
+
 html,
 body {
   overflow-x: hidden;
