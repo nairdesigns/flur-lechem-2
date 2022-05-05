@@ -23,9 +23,11 @@ const Footer = () => {
           <div className="col-lg-3 col-sm-6 ">
             <FooterH2>Contact Us</FooterH2>
             <FooterLink href="/contact">Contact</FooterLink>
-            {/* <FooterLink href="#">Support</FooterLink>
-            <FooterLink href="#">Destinations</FooterLink>
-            <FooterLink href="#">Our Locations</FooterLink> */}
+            <FooterLink className="no-effect">
+              Phone Number: <br></br> 0969-313-6478
+            </FooterLink>
+            {/* <FooterLink href="#">Destinations</FooterLink> */}
+            {/* <FooterLink href="#">Our Locations</FooterLink> */}
           </div>
           {/* <div className="col-lg-3 col-sm-6">
             <FooterH2>Customers</FooterH2>
@@ -36,10 +38,9 @@ const Footer = () => {
           </div> */}
           <div className="col-lg-3 col-sm-6">
             <FooterH2>Follow Us</FooterH2>
-            <FooterLink href="#">Instagram</FooterLink>
-            <FooterLink href="#">Youtube</FooterLink>
-            <FooterLink href="#">Facebook</FooterLink>
-            <FooterLink href="#">LinkedIn</FooterLink>
+            <FooterLink href="https://web.facebook.com/flurlechem">
+              Facebook
+            </FooterLink>
           </div>
         </div>
         <div className="row">

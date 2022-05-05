@@ -12,7 +12,8 @@ export const InfoSection = ({
   text,
   image,
   btnText,
-  verse,
+  text2,
+  hidden,
 }) => {
   return (
     <>
@@ -23,13 +24,14 @@ export const InfoSection = ({
               <Subtitle>{subtitle}</Subtitle>
               <Title className="text-black mb-5">{title}</Title>
               <p className="text-black mb-4">{text}</p>
-              <p className="text-black mb-4">{verse}</p>
+              <h3 className="text-black mb-4">{text2}</h3>
 
               <ButtonBasic
                 to=""
                 primary="true"
                 dark="true"
                 className="mb-5"
+                id={hidden}
                 onClick={() => {
                   window.location.href = "/contact";
                 }}

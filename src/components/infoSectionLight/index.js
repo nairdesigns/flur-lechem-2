@@ -10,7 +10,7 @@ export const InfoSectionLight = ({
   subtitle,
   text,
   image,
-  verse,
+  text2,
   btnText,
 }) => {
   return (
