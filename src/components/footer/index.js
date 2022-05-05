@@ -34,13 +34,13 @@ const Footer = () => {
             <FooterLink href="#">Video Samples</FooterLink>
             <FooterLink href="#">Agency</FooterLink>
           </div> */}
-          {/* <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-3 col-sm-6">
             <FooterH2>Follow Us</FooterH2>
             <FooterLink href="#">Instagram</FooterLink>
             <FooterLink href="#">Youtube</FooterLink>
             <FooterLink href="#">Facebook</FooterLink>
             <FooterLink href="#">LinkedIn</FooterLink>
-          </div> */}
+          </div>
         </div>
         <div className="row">
           <div className="col-12 mt-5 ">
