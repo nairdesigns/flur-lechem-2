@@ -5,7 +5,15 @@ import { InfoContainer, InfoWrapper, Subtitle, Title } from "./InfoElements";
 import { ButtonBasic } from "../ButtonElements";
 import { Link } from "react-router-dom";
 
-export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
+export const InfoSection = ({
+  id,
+  title,
+  subtitle,
+  text,
+  image,
+  btnText,
+  verse,
+}) => {
   return (
     <>
       <InfoContainer id={id} className="">
@@ -15,6 +23,8 @@ export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
               <Subtitle>{subtitle}</Subtitle>
               <Title className="text-black mb-5">{title}</Title>
               <p className="text-black mb-4">{text}</p>
+              <p className="text-black mb-4">{verse}</p>
+
               <ButtonBasic
                 to=""
                 primary="true"

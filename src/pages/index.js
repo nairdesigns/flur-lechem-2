@@ -33,8 +33,8 @@ export const Home = () => {
         title="A Bakery Like None Other"
         text="Flur-Lechem is your one-stop shop & supplier with a wide range of fresh & tasty baked goods for every occasion. 🇵🇭 💯 Trusted quality pastries! In every thing give thanks: for this is the will of God in Christ Jesus concerning you."
         btnText="Contact Us"
+        verse="-1 Thess 5:18"
       />
-      <InfoSection text="-1 Thess 5:18" />
       {/* <InfoSectionLight
         image={Image2}
         id="discover"
