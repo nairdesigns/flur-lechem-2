@@ -6,11 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import HttpsRedirect from "react-https-redirect";
 
 ReactDOM.render(
-  <HttpsRedirect>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </HttpsRedirect>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
