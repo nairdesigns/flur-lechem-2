@@ -24,8 +24,20 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Encode Sans Expanded", sans-serif;
+  font-family: "Caveat", cursive;
   background-color: transparent;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+b {
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
 }
 
 .logo-text {
