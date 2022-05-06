@@ -132,3 +132,7 @@ b {
 .no-effect {
   cursor: default;
 }
+
+.service-card > img {
+  max-height: 443px;
+}
