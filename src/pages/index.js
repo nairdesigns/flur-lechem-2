@@ -6,7 +6,7 @@ import { Sidebar } from "./../components/sidebar";
 
 // import Image1 from "../images/design-notes.svg";
 import InfoSectionLight from "../components/infoSectionLight";
-import Services from "../components/services";
+import Menu from "../components/menu";
 import Footer from "../components/footer";
 import ImageLocation from "../images/location.jpg";
 
@@ -42,7 +42,7 @@ export const Home = () => {
         text="Phasellus porta sagittis sapien. Nam quis odio eu libero tempus rutrum. Suspendisse nec eros eget ex cursus rhoncus. Proin at velit quis ante pretium porta. Quisque pulvinar, elit et tincidunt ultricies, mauris odio luctus risus, vitae auctor elit risus a tortor. Nunc pulvinar purus id est rutrum vulputate. Mauris venenatis lectus vel nisi semper scelerisque."
         btnText="Explore" */}
 
-      <Services />
+      <Menu />
       <InfoSection
         id="location"
         image={ImageLocation}

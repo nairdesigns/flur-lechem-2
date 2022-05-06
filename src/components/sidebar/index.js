@@ -28,8 +28,8 @@ export const Sidebar = ({ isOpen, toggle }) => {
           >
             Contact Us
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
-            Services
+          <SidebarLink to="Menu" onClick={toggle}>
+            Menu
           </SidebarLink>
           <SidebarLink to="location" onClick={toggle}>
             location
