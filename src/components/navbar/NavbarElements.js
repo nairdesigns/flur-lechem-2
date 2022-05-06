@@ -7,7 +7,6 @@ export const Nav = styled.nav`
   background-color: white;
   height: 80px;
   margin-top: -121px;
-  min-width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +28,6 @@ export const NavbarContainer = styled.div`
 
   background-color: white;
 
-  width: 100%;
   padding: 0 24px;
   max-width: 1100px;
 `;
