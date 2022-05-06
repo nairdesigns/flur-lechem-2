@@ -26,6 +26,7 @@ export const HeroContainer = styled.div`
     bottom: 0;
     right: 0;
     z-index: 2;
+    height: 500px;
   }
 `;
 

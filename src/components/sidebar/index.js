@@ -31,6 +31,9 @@ export const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="services" onClick={toggle}>
             Services
           </SidebarLink>
+          <SidebarLink to="location" onClick={toggle}>
+            location
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap></SideBtnWrap>
       </SidebarWrapper>

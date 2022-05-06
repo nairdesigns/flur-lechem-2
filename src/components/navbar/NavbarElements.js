@@ -7,13 +7,14 @@ export const Nav = styled.nav`
   background-color: white;
   height: 80px;
   margin-top: -121px;
+  min-width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 1000 !important;
   transition: all 0.3s ease-in-out;
 
   @media screen and (max-width: 960px) {
@@ -25,6 +26,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   z-index: 1;
+
   background-color: white;
 
   width: 100%;
