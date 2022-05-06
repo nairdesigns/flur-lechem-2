@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 200px;
   width: 100%;
   min-height: 700px;
