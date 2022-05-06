@@ -32,7 +32,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
             Menu
           </SidebarLink>
           <SidebarLink to="location" onClick={toggle}>
-            location
+            Location
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap></SideBtnWrap>
