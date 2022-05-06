@@ -10,7 +10,10 @@ import {
 } from "./MenuElements";
 // import Icon1 from "../../images/space.svg";
 import Icon1 from "../../images/menu1.jpg";
-import Icon3 from "../../images/real-time.svg";
+import Icon2 from "../../images/menu2.jpg";
+import Icon3 from "../../images/menu3.jpg";
+import Icon4 from "../../images/menu4.jpg";
+
 // const Icon1 =
 //   "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
 const Menu = () => {
@@ -21,18 +24,18 @@ const Menu = () => {
       <div className="container text-center">
         <div className="row ">
           <div className="col Menu-card py-4">
-            <img src={Icon1}></img>s
+            <img alt="menu" src={Icon1}></img>s
           </div>
           <div className="col Menu-card py-4">
-            <img src={Icon1}></img>s
+            <img alt="menu" src={Icon2}></img>s
           </div>
         </div>
         <div className="row ">
           <div className="col Menu-card py-4">
-            <img src={Icon1}></img>s
+            <img alt="menu" src={Icon3}></img>s
           </div>
           <div className="col Menu-card py-4">
-            <img src={Icon1}></img>s
+            <img alt="menu" src={Icon4}></img>s
           </div>
         </div>
       </div>
