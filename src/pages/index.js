@@ -9,6 +9,7 @@ import InfoSectionLight from "../components/infoSectionLight";
 import Menu from "../components/menu";
 import Footer from "../components/footer";
 import ImageLocation from "../images/location.jpg";
+import Content from "../components/fb-posts";
 
 const Image1 =
   "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
@@ -43,6 +44,7 @@ export const Home = () => {
         btnText="Explore" */}
 
       <Menu />
+      <Content />
       <InfoSection
         id="location"
         image={ImageLocation}
