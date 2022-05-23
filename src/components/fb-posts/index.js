@@ -3,14 +3,14 @@ import TinderCard from "react-tinder-card";
 
 const api =
   "https://graph.facebook.com/v13.0/102155212457926?fields=albums%7Bphotos%7Bpicture%2Clink%2Cimages%7D%7D&access_token=EAAOzsZB8oZBgoBAINxyZCNPifXs0X6FjraUDsqV9Am6BH6JUf7vp4ri7MRYN4QpmXg56Xo2HSOjgZBF0wMAYf5qQNrXUH5c1OuDWGsRh5cZBHhabQCbovcdDEQDIejxJX1DnPUbWI2DbovwKYZAAZCUxwDm8LWuH7OctqIfjWW7GwZDZD";
-const onSwipe = (direction) => {
-  console.log("You swiped: " + direction);
+
+const swiped = (direction, nameToDelete) => {
+  console.log("removing: " + nameToDelete);
 };
 
-const onCardLeftScreen = (myIdentifier) => {
-  console.log(myIdentifier + " left the screen");
+const outOfFrame = (name) => {
+  console.log(name + " left the screen!");
 };
-
 export default class Content extends React.Component {
   constructor(props) {
     super(props);
@@ -36,25 +36,49 @@ export default class Content extends React.Component {
   }
 
   render() {
-    console.log(this.state.pictureOne);
+    const db = [
+      {
+        name: "Richard Hendricks",
+        url: this.state.picture1,
+      },
+      {
+        name: "Erlich Bachman",
+        url: this.state.picture2,
+      },
+      {
+        name: "Monica Hall",
+        url: this.state.picture3,
+      },
+      {
+        name: "Jared Dunn",
+        url: this.state.picture4,
+      },
+      {
+        name: "Dinesh Chugtai",
+        url: this.state.picture5,
+      },
+    ];
 
     return (
       //Here is where the data from the API should be displayed
+
       <>
         <div className="newmessage">
           <p>Message:</p>
         </div>
-        <TinderCard
-          onSwipe={onSwipe}
-          onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-          preventSwipe={["up", "down"]}
-        >
-          <img className="tinder-card" src={this.state.picture1} />
-          {/* <img src={this.state.picture2} />
-          <img src={this.state.picture3} />
-          <img src={this.state.picture4} />
-          <img src={this.state.picture5} /> */}
-        </TinderCard>
+        <div className="cardContainer">
+          {db.map((character) => (
+            <TinderCard
+              className="swipe"
+              key={character.name}
+              onSwipe={(dir) => swiped(dir, character.name)}
+              onCardLeftScreen={() => outOfFrame(character.name)}
+            >
+              yoooo
+              <img src={character.url} className="tinder-card" />
+            </TinderCard>
+          ))}
+        </div>
       </>
     );
   }
