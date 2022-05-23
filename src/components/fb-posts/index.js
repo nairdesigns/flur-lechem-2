@@ -63,21 +63,23 @@ export default class Content extends React.Component {
       //Here is where the data from the API should be displayed
 
       <>
-        <div className="newmessage">
-          <p>Message:</p>
-        </div>
-        <div className="cardContainer">
-          {db.map((character) => (
-            <TinderCard
-              className="swipe"
-              key={character.name}
-              onSwipe={(dir) => swiped(dir, character.name)}
-              onCardLeftScreen={() => outOfFrame(character.name)}
-            >
-              yoooo
-              <img src={character.url} className="tinder-card" />
-            </TinderCard>
-          ))}
+        <div className="container text-center">
+          <div className="row ">
+            <div className="col Menu-card py-4">
+              <div className="cardContainer">
+                {db.map((character) => (
+                  <TinderCard className="swipe" key={character.name}>
+                    <img
+                      src={character.url}
+                      className="tinder-card center-align"
+                    />
+                  </TinderCard>
+                ))}
+              </div>
+            </div>
+
+            <div className="col Menu-card py-4"></div>
+          </div>
         </div>
       </>
     );

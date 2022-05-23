@@ -44,7 +44,6 @@ export const Home = () => {
         btnText="Explore" */}
 
       <Menu />
-      <Content />
       <InfoSection
         id="location"
         image={ImageLocation}

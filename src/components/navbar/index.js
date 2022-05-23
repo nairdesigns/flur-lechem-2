@@ -46,7 +46,24 @@ export const Navbar = ({ toggle }) => {
               <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Contact Us</NavLinks>
+              <NavLinks
+                onClick={() => {
+                  window.location.href = "/contact";
+                }}
+                to=""
+              >
+                Contact Us
+              </NavLinks>{" "}
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                onClick={() => {
+                  window.location.href = "/posts";
+                }}
+                to=""
+              >
+                Posts
+              </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="Menu">Menu</NavLinks>
