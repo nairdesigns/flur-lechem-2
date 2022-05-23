@@ -14,8 +14,35 @@ import Icon2 from "../../images/menu2.jpg";
 import Icon3 from "../../images/menu3.jpg";
 import Icon4 from "../../images/menu4.jpg";
 
-// const Icon1 =
-//   "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
+const api = "http://localhost:8080/api/messages/";
+
+export class Content extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      messages: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch(api)
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState(data);
+      });
+  }
+
+  render() {
+    return (
+      //Here is where the data from the API should be displayed
+      <div className="newmessage">
+        <p>User: </p>
+        <p>Message:</p>
+      </div>
+    );
+  }
+}
+
 const Menu = () => {
   return (
     <MenuContainer id="Menu">

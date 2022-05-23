@@ -9,6 +9,7 @@ import InfoSectionLight from "../components/infoSectionLight";
 import Menu from "../components/menu";
 import Footer from "../components/footer";
 import ImageLocation from "../images/location.jpg";
+import Content from "../components/fb-posts";
 
 const Image1 =
   "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80";
@@ -47,8 +48,7 @@ export const Home = () => {
         id="location"
         image={ImageLocation}
         title="Our Location"
-        text="Flur-Lechem is your one-stop shop & supplier with a wide range of fresh & tasty baked goods for every occasion. 🇵🇭 💯 Trusted quality pastries! In every thing give thanks: for this is the will of God in Christ Jesus concerning you."
-        text2="-1 Thess 5:18"
+        text=""
         hidden="hidden"
       />
       {/* <InfoSectionLight

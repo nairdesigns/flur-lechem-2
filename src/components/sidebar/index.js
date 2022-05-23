@@ -22,6 +22,15 @@ export const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
           <SidebarLink
             onClick={() => {
+              window.location.href = "/posts";
+            }}
+            to=""
+          >
+            Posts
+          </SidebarLink>
+
+          <SidebarLink
+            onClick={() => {
               window.location.href = "/contact";
             }}
             to=""
