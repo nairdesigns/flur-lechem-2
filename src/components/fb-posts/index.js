@@ -1,7 +1,15 @@
 import React from "react";
+import TinderCard from "react-tinder-card";
 
 const api =
   "https://graph.facebook.com/v13.0/102155212457926?fields=albums%7Bphotos%7Bpicture%2Clink%2Cimages%7D%7D&access_token=EAAOzsZB8oZBgoBAINxyZCNPifXs0X6FjraUDsqV9Am6BH6JUf7vp4ri7MRYN4QpmXg56Xo2HSOjgZBF0wMAYf5qQNrXUH5c1OuDWGsRh5cZBHhabQCbovcdDEQDIejxJX1DnPUbWI2DbovwKYZAAZCUxwDm8LWuH7OctqIfjWW7GwZDZD";
+const onSwipe = (direction) => {
+  console.log("You swiped: " + direction);
+};
+
+const onCardLeftScreen = (myIdentifier) => {
+  console.log(myIdentifier + " left the screen");
+};
 
 export default class Content extends React.Component {
   constructor(props) {
@@ -34,14 +42,19 @@ export default class Content extends React.Component {
       //Here is where the data from the API should be displayed
       <>
         <div className="newmessage">
-          <img src={this.state.picture1} />
-          <img src={this.state.picture2} />
-          <img src={this.state.picture3} />
-          <img src={this.state.picture4} />
-          <img src={this.state.picture5} />
-
           <p>Message:</p>
         </div>
+        <TinderCard
+          onSwipe={onSwipe}
+          onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+          preventSwipe={["up", "down"]}
+        >
+          <img className="tinder-card" src={this.state.picture1} />
+          {/* <img src={this.state.picture2} />
+          <img src={this.state.picture3} />
+          <img src={this.state.picture4} />
+          <img src={this.state.picture5} /> */}
+        </TinderCard>
       </>
     );
   }
