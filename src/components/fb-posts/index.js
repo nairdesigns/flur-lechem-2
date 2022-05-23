@@ -1,85 +1,115 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
+// import TinderCard from '../react-tinder-card/index'
 import TinderCard from "react-tinder-card";
 
-const api =
-  "https://graph.facebook.com/v13.0/102155212457926?fields=albums%7Bphotos%7Bpicture%2Clink%2Cimages%7D%7D&access_token=EAAOzsZB8oZBgoBAINxyZCNPifXs0X6FjraUDsqV9Am6BH6JUf7vp4ri7MRYN4QpmXg56Xo2HSOjgZBF0wMAYf5qQNrXUH5c1OuDWGsRh5cZBHhabQCbovcdDEQDIejxJX1DnPUbWI2DbovwKYZAAZCUxwDm8LWuH7OctqIfjWW7GwZDZD";
+const db = [
+  {
+    name: "Richard Hendricks",
+    url: "./img/richard.jpg",
+  },
+  {
+    name: "Erlich Bachman",
+    url: "./img/erlich.jpg",
+  },
+  {
+    name: "Monica Hall",
+    url: "./img/monica.jpg",
+  },
+  {
+    name: "Jared Dunn",
+    url: "./img/jared.jpg",
+  },
+  {
+    name: "Dinesh Chugtai",
+    url: "./img/dinesh.jpg",
+  },
+];
 
-const swiped = (direction, nameToDelete) => {
-  console.log("removing: " + nameToDelete);
-};
+const alreadyRemoved = [];
+let charactersState = db; // This fixes issues with updating characters state forcing it to use the current state and not the state that was active when the card was created.
 
-const outOfFrame = (name) => {
-  console.log(name + " left the screen!");
-};
-export default class Content extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      messages: [],
-    };
-  }
+function Content() {
+  const [characters, setCharacters] = useState(db);
+  const [lastDirection, setLastDirection] = useState();
 
-  componentDidMount() {
-    fetch(api)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(`this is the api data:`);
-        console.log(data.albums.data[0].photos.data[0].images[0].source);
-        this.setState({
-          picture1: data.albums.data[0].photos.data[0].images[0].source,
-          picture2: data.albums.data[0].photos.data[1].images[0].source,
-          picture3: data.albums.data[0].photos.data[2].images[0].source,
-          picture4: data.albums.data[0].photos.data[3].images[0].source,
-          picture5: data.albums.data[0].photos.data[4].images[0].source,
-        });
-      });
-  }
+  const childRefs = useMemo(
+    () =>
+      Array(db.length)
+        .fill(0)
+        .map((i) => React.createRef()),
+    []
+  );
 
-  render() {
-    const db = [
-      {
-        name: "Richard Hendricks",
-        url: this.state.picture1,
-      },
-      {
-        name: "Erlich Bachman",
-        url: this.state.picture2,
-      },
-      {
-        name: "Monica Hall",
-        url: this.state.picture3,
-      },
-      {
-        name: "Jared Dunn",
-        url: this.state.picture4,
-      },
-      {
-        name: "Dinesh Chugtai",
-        url: this.state.picture5,
-      },
-    ];
+  const swiped = (direction, nameToDelete) => {
+    console.log("removing: " + nameToDelete);
+    setLastDirection(direction);
+    alreadyRemoved.push(nameToDelete);
+  };
 
-    return (
-      //Here is where the data from the API should be displayed
-
-      <>
-        <div className="newmessage">
-          <p>Message:</p>
-        </div>
-        <div className="cardContainer">
-          {db.map((character) => (
-            <TinderCard
-              className="swipe"
-              key={character.name}
-              onSwipe={(dir) => swiped(dir, character.name)}
-              onCardLeftScreen={() => outOfFrame(character.name)}
-            >
-              yoooo
-              <img src={character.url} className="tinder-card" />
-            </TinderCard>
-          ))}
-        </div>
-      </>
+  const outOfFrame = (name) => {
+    console.log(name + " left the screen!");
+    charactersState = charactersState.filter(
+      (character) => character.name !== name
     );
-  }
+    setCharacters(charactersState);
+  };
+
+  const swipe = (dir) => {
+    const cardsLeft = characters.filter(
+      (person) => !alreadyRemoved.includes(person.name)
+    );
+    if (cardsLeft.length) {
+      const toBeRemoved = cardsLeft[cardsLeft.length - 1].name; // Find the card object to be removed
+      const index = db.map((person) => person.name).indexOf(toBeRemoved); // Find the index of which to make the reference to
+      alreadyRemoved.push(toBeRemoved); // Make sure the next card gets removed next time if this card do not have time to exit the screen
+      childRefs[index].current.swipe(dir); // Swipe the card!
+    }
+  };
+
+  return (
+    <div>
+      <link
+        href="https://fonts.googleapis.com/css?family=Damion&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+        rel="stylesheet"
+      />
+      <h1>React Tinder Card</h1>
+      <div className="cardContainer">
+        {characters.map((character, index) => (
+          <TinderCard
+            ref={childRefs[index]}
+            className="swipe"
+            key={character.name}
+            onSwipe={(dir) => swiped(dir, character.name)}
+            onCardLeftScreen={() => outOfFrame(character.name)}
+          >
+            <div
+              style={{ backgroundImage: "url(" + character.url + ")" }}
+              className="card"
+            >
+              <h3>{character.name}</h3>
+            </div>
+          </TinderCard>
+        ))}
+      </div>
+      <div className="buttons">
+        <button onClick={() => swipe("left")}>Swipe left!</button>
+        <button onClick={() => swipe("right")}>Swipe right!</button>
+      </div>
+      {lastDirection ? (
+        <h2 key={lastDirection} className="infoText">
+          You swiped {lastDirection}
+        </h2>
+      ) : (
+        <h2 className="infoText">
+          Swipe a card or press a button to get started!
+        </h2>
+      )}
+    </div>
+  );
 }
+
+export default Content;
