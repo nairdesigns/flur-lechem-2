@@ -18,28 +18,29 @@ export default class Content extends React.Component {
         console.log(`this is the api data:`);
         console.log(data.albums.data[0].photos.data[0].images[0].source);
         this.setState({
-          info: data.albums.data[0].photos,
+          picture1: data.albums.data[0].photos.data[0].images[0].source,
+          picture2: data.albums.data[0].photos.data[1].images[0].source,
+          picture3: data.albums.data[0].photos.data[2].images[0].source,
+          picture4: data.albums.data[0].photos.data[3].images[0].source,
+          picture5: data.albums.data[0].photos.data[4].images[0].source,
         });
       });
   }
 
   render() {
-    console.log(this.state.info);
-    const arr = [];
-    Object.keys(this.state.info).forEach(function (key) {
-      arr.push(this.state.info[key]);
-    });
+    console.log(this.state.pictureOne);
+
     return (
       //Here is where the data from the API should be displayed
       <>
         <div className="newmessage">
-          {/* <img src={this.state.info} /> */}
-          <ul>
-            {arr.map((item) => (
-              <img src={item.data[0].images[0].source} />
-            ))}
-          </ul>
-          ;<p>Message:</p>
+          <img src={this.state.picture1} />
+          <img src={this.state.picture2} />
+          <img src={this.state.picture3} />
+          <img src={this.state.picture4} />
+          <img src={this.state.picture5} />
+
+          <p>Message:</p>
         </div>
       </>
     );
