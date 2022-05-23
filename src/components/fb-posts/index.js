@@ -16,23 +16,32 @@ export default class Content extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         console.log(`this is the api data:`);
-
         console.log(data.albums.data[0].photos.data[0].images[0].source);
         this.setState({
-          info: data.albums.data[0].photos.data[0].images[0].source,
+          info: data.albums.data[0].photos,
         });
       });
   }
 
   render() {
-    console.log(this.state);
+    console.log(this.state.info);
+    const arr = [];
+    Object.keys(this.state.info).forEach(function (key) {
+      arr.push(this.state.info[key]);
+    });
     return (
       //Here is where the data from the API should be displayed
-      <div className="newmessage">
-        <img src={this.state.info} />
-
-        <p>Message:</p>
-      </div>
+      <>
+        <div className="newmessage">
+          {/* <img src={this.state.info} /> */}
+          <ul>
+            {arr.map((item) => (
+              <img src={item.data[0].images[0].source} />
+            ))}
+          </ul>
+          ;<p>Message:</p>
+        </div>
+      </>
     );
   }
 }
